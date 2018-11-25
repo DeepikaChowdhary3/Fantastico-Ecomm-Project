@@ -7,6 +7,6 @@
 <title>Fantastico|SignIn</title>
 </head>
 <body>
-<h3 align="cente">Sign In Page</h3>
+<h3 align="center">Sign In Page</h3>
 </body>
 </html>
