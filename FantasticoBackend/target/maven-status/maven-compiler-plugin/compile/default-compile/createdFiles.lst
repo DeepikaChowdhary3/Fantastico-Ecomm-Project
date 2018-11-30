@@ -1,0 +1,17 @@
+com\cosmo\dao\CategoryDAO.class
+com\cosmo\dao\CartDAO.class
+com\cosmo\config\DBConfig.class
+com\cosmo\FantasticoBackend\App.class
+com\cosmo\dao\CategoryDAOImpl.class
+com\cosmo\model\Cart.class
+com\cosmo\model\Supplier.class
+com\cosmo\dao\SupplierDAO.class
+com\cosmo\model\Category.class
+com\cosmo\dao\UserDAO.class
+com\cosmo\model\User.class
+com\cosmo\dao\CartDAOImpl.class
+com\cosmo\dao\SupplierDAOImpl.class
+com\cosmo\dao\UserDAOImpl.class
+com\cosmo\dao\ProductDAO.class
+com\cosmo\dao\ProductDAOImpl.class
+com\cosmo\model\Product.class

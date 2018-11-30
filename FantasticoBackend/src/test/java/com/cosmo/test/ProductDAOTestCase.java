@@ -25,7 +25,7 @@ public class ProductDAOTestCase {
 		context.refresh();
 		productDAO=(ProductDAO)context.getBean("productDAO");
 	}
-	@Ignore
+	
 	@Test
 	public void appendProductTest() {
 		Product product=new Product();
@@ -38,13 +38,13 @@ public class ProductDAOTestCase {
 		product.setStock(5);
 		assertTrue("Probem in Adding the Product",productDAO.appendProduct(product));
 	}
-	@Ignore
+	
 	@Test
 	public void eraseProductTest() {
-		Product product=productDAO.getProduct(252);
+		Product product=productDAO.getProduct(1);
 		assertTrue("Problem in deleting the product",productDAO.eraseProduct(product));
 	}
-	@Ignore
+	
 	@Test
 	public void reformProductTest() {
 		Product product=productDAO.getProduct(1);

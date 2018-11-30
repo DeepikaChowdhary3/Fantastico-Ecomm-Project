@@ -1,0 +1,7 @@
+com\cosmo\FantasticoBackend\AppTest.class
+com\cosmo\test\SupplierDAOTestCase.class
+com\cosmo\test\CartDAOTestCase.class
+com\cosmo\test\ProductDAOTestCase.class
+com\cosmo\test\DemoTest.class
+com\cosmo\test\CategoryDAOTestCase.class
+com\cosmo\test\UserDAOTestCase.class

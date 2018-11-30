@@ -47,7 +47,6 @@ public class CartDAOTestCase {
 		
 	}
 	
-	@Ignore
 	@Test
 	public void eraseOrderTest()
 	{
@@ -55,7 +54,7 @@ public class CartDAOTestCase {
 		assertTrue("Problem in deleting the order",cartDAO.eraseExistingOrder(cart));
 	}
 	
-	@Ignore
+	
 	@Test
 	public void listofOrdersTest()
 	{

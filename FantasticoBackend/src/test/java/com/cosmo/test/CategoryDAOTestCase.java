@@ -25,27 +25,27 @@ public class CategoryDAOTestCase
 		context.refresh();
 		categoryDAO=(CategoryDAO)context.getBean("categoryDAO");
 	}
-	@Ignore
+
 	@Test
 	public void appendCategoryTest()
 	{
 		Category category=new Category();
-		category.setCategoryId(1005);
-		category.setCategoryName("Hair-Care");
-		category.setCategoryDesc("Get silky smooth and damage free hair");
 		
+		category.setCategoryName("Accessories");
+		category.setCategoryDesc("Accessories are like vitamins to fashion,usse them liberally");
+		category.setCategoryId(1006);
 		assertTrue("Probem in Adding the Category",categoryDAO.appendCategory(category));
 	}
 	
-	@Ignore
+	
 	@Test
 	public void eraseCategoryTest()
 	{
-		Category category=categoryDAO.getCategory(2);
+		Category category=categoryDAO.getCategory(1001);
 		assertTrue("Problem in Deleting the Category",categoryDAO.eraseCategory(category));
 	}
 	
-	
+	@Ignore
 	@Test
 	public void reformCategoryTest()
 	{	
@@ -54,7 +54,7 @@ public class CategoryDAOTestCase
 		assertTrue("Problem in Updating the Category",categoryDAO.reformCategory(category));
 	}
 
-	@Ignore
+	
 	@Test
 	public void listCategoriesTest()
 	{

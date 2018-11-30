@@ -1,6 +1,6 @@
 package com.cosmo.model;
 
-import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -14,8 +14,7 @@ public class User {
 	String password;
 	boolean enabled;
 	String role;
-	
-	@Column(name="UserName", nullable=false)
+
 	String customerName;
 	String mobileNo;
 	String emailId;

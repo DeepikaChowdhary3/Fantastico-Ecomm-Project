@@ -40,7 +40,7 @@ public class UserDAOTestCase {
 		
 	}
 	
-	@Ignore
+
 	@Test
 	public void updateUserTest()
 	{
@@ -49,7 +49,7 @@ public class UserDAOTestCase {
 		assertTrue("Problem in udate the user details",userDAO.updateUserDetails(user));
 	}
 
-	@Ignore
+
 	@Test
 	public void ListOfUsersTest()
 	{

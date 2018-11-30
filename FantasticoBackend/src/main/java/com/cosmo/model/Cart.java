@@ -11,7 +11,6 @@ import javax.persistence.Table;
 @Table
 public class Cart {
 @Id
-
 int orderId;
 String userId;
 String emailId;

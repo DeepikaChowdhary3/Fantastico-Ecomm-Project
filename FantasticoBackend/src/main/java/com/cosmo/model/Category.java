@@ -1,8 +1,8 @@
 package com.cosmo.model;
 
-import javax.persistence.Column;
+
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
+
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -10,7 +10,6 @@ import javax.persistence.Table;
 @Table
 public class Category {
 	@Id
-	
 	int categoryId;
 	
 	String categoryName;

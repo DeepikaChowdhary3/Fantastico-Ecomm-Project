@@ -38,22 +38,22 @@ public class SupplierDAOTestCase
 		
 		assertTrue("Probem in Adding the Supplier",supplierDAO.appendSupplier(supplier));
 	}
-	@Ignore
+
 	@Test
 	public void updateSupplierTest()
 	{	
-		Supplier supplier=supplierDAO.getSupplier(2);
+		Supplier supplier=supplierDAO.getSupplier(2001);
 		supplier.setSupplierAddr("Chennai,TamilNadu");	
 		assertTrue("Problem in Updating the Supplier",supplierDAO.reformSupplier(supplier));
 	}
-	@Ignore
+	
 	@Test
 	public void deleteSupplierTest()
 	{
-		Supplier supplier=supplierDAO.getSupplier(4);
+		Supplier supplier=supplierDAO.getSupplier(2001);
 		assertTrue("Problem in deleting the Supplier",supplierDAO.eraseSupplier(supplier));
 	}
-	@Ignore
+	
 	@Test
 	public void listSuppliersTest()
 	{
