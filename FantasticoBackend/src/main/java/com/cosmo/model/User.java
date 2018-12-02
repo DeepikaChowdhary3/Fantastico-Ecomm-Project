@@ -1,6 +1,7 @@
 package com.cosmo.model;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,24 +10,26 @@ import javax.persistence.Table;
 @Table
 public class User {
 
-	@Id
+	
+	
 	String userId;
 	String password;
 	boolean enabled;
 	String role;
 
-	String customerName;
-	String mobileNo;
-	String emailId;
-	String address;
-	
-	
 	public String getUserId() {
 		return userId;
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+	String customerName;
+	@Id
+	String mobileNo;
+	String emailId;
+	String address;
+	
+	
 	public String getPassword() {
 		return password;
 	}

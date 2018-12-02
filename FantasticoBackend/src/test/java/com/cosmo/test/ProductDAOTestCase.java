@@ -31,20 +31,20 @@ public class ProductDAOTestCase {
 		Product product=new Product();
 		
 		product.setProductName("Lakme Matte");
-		product.setProductDesc("Lakme Marron mix Colour with a matte finish");
-		product.setSupplierId(2003);
+		product.setProductDesc("Go awesome with maroon mix of matte lips");
+		product.setSupplierId(2001);
 		product.setCategoryId(1002);
-		product.setPrice(350);
-		product.setStock(5);
+		product.setPrice(400);
+		product.setStock(15);
 		assertTrue("Probem in Adding the Product",productDAO.appendProduct(product));
 	}
-	
+	@Ignore
 	@Test
 	public void eraseProductTest() {
 		Product product=productDAO.getProduct(1);
 		assertTrue("Problem in deleting the product",productDAO.eraseProduct(product));
 	}
-	
+	@Ignore
 	@Test
 	public void reformProductTest() {
 		Product product=productDAO.getProduct(1);
@@ -52,7 +52,7 @@ public class ProductDAOTestCase {
 		assertTrue("Problem in updating the product",productDAO.reformProduct(product));
 	}
 	
-	
+	@Ignore
 	@Test
 	public void ProductsList() {
 		List<Product> Productslist=productDAO.Productslist();

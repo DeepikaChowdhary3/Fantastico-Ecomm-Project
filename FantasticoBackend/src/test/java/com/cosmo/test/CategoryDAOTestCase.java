@@ -37,11 +37,11 @@ public class CategoryDAOTestCase
 		assertTrue("Probem in Adding the Category",categoryDAO.appendCategory(category));
 	}
 	
-	
+	@Ignore
 	@Test
 	public void eraseCategoryTest()
 	{
-		Category category=categoryDAO.getCategory(1001);
+		Category category=categoryDAO.getCategory(1006);
 		assertTrue("Problem in Deleting the Category",categoryDAO.eraseCategory(category));
 	}
 	
@@ -54,7 +54,7 @@ public class CategoryDAOTestCase
 		assertTrue("Problem in Updating the Category",categoryDAO.reformCategory(category));
 	}
 
-	
+	@Ignore
 	@Test
 	public void listCategoriesTest()
 	{

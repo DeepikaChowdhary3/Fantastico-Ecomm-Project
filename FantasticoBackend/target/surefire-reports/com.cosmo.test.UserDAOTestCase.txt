@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.cosmo.test.UserDAOTestCase
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.507 sec <<< FAILURE!
-ListOfUsersTest(com.cosmo.test.UserDAOTestCase)  Time elapsed: 0.021 sec  <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.5 sec <<< FAILURE!
+ListOfUsersTest(com.cosmo.test.UserDAOTestCase)  Time elapsed: 0.031 sec  <<< ERROR!
 javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not prepare statement
 	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
 	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
@@ -98,7 +98,7 @@ select user0_.userId as userId1_4_, user0_.address as address2_4_, user0_.custom
 	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:172)
 	... 60 more
 
-registerUserTest(com.cosmo.test.UserDAOTestCase)  Time elapsed: 0.023 sec  <<< ERROR!
+registerUserTest(com.cosmo.test.UserDAOTestCase)  Time elapsed: 0.078 sec  <<< ERROR!
 org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [insert into User (address, customerName, emailId, enabled, mobileNo, password, role, userId) values (?, ?, ?, ?, ?, ?, ?, ?)]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
 	at org.springframework.orm.hibernate5.SessionFactoryUtils.convertHibernateAccessException(SessionFactoryUtils.java:230)
 	at org.springframework.orm.hibernate5.HibernateTransactionManager.convertHibernateAccessException(HibernateTransactionManager.java:798)
@@ -196,7 +196,7 @@ insert into User (address, customerName, emailId, enabled, mobileNo, password, r
 	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:172)
 	... 57 more
 
-updateUserTest(com.cosmo.test.UserDAOTestCase)  Time elapsed: 0.053 sec  <<< ERROR!
+updateUserTest(com.cosmo.test.UserDAOTestCase)  Time elapsed: 0 sec  <<< ERROR!
 org.hibernate.exception.SQLGrammarException: could not prepare statement
 	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:106)
 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.cosmo.test.CartDAOTestCase
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.533 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.504 sec

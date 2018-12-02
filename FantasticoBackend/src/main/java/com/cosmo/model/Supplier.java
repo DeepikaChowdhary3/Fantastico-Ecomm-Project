@@ -1,8 +1,8 @@
 package com.cosmo.model;
 
-import javax.persistence.Column;
+
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
+
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -13,8 +13,6 @@ public class Supplier {
 	@Id
 	int supplierId;
 	String supplierName;
-	
-	@Column(name="SupplierAddress")
 	String supplierAddr;
 	
 	public int getSupplierId() {

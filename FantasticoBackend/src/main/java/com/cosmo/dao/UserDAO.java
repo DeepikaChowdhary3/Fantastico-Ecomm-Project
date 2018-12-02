@@ -9,6 +9,6 @@ public interface UserDAO {
 	public boolean appendnewUser(User user);
 	public boolean updateUserDetails(User user);
 	public List<User> listofUsers();
-	public User getUser(String userId);
+	public User getUser(String mobileNo);
 	
 }
