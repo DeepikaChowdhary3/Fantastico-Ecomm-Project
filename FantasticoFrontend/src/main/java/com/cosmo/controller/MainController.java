@@ -6,19 +6,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainController {
 
-	@RequestMapping(value="/signin")
+	@RequestMapping("signin")
 	public String showSignIn()
 	{
 		return "SignIn";
 	}
 	
-	@RequestMapping(value="/signup")
+	@RequestMapping("signup")
 	public String showSignUp()
 	{
 		return "SignUp";
 	}
 	
-	@RequestMapping(value="/aboutus")
+	@RequestMapping("aboutus")
 	public String showAboutUs()
 	{
 		return "AboutUs";
