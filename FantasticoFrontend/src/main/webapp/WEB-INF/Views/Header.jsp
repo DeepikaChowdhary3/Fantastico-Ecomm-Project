@@ -7,6 +7,7 @@
 <title>Fantastico</title>
 </head>
 <body>
+<a href="category">Category</a>
 <a href="signin">SignIn</a>
 <a href="signup">SignUp</a>
 <a href="aboutus">AboutUs</a>
